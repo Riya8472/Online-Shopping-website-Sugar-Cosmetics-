@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifting Sets $ Combo - Sugar Cosmetics</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: white;
+            color: black;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .header {
+            position: fixed;
+            top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            z-index: 1000;
+            background: transparent; /* Removed black background */
+        }
+        .back-button, .cart-icon {
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 15px;
+            background: rgba(0, 0, 0, 0.5); /* Light background for visibility */
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .back-button:hover, .cart-icon:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .cart-icon {
+            position: relative;
+        }
+        .cart-icon span {
+            background: red;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 50%;
+            padding: 5px 8px;
+            position: absolute;
+            top: -5px;
+            right: -10px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 100px 20px 20px;
+            justify-content: center;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            width: 320px;
+            height: 540px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+        .product img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .product h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .price {
+            font-weight: bold;
+            font-size: 20px;
+            color: black;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .buttons button {
+            background: black;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+        .buttons button:hover {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Cart & Back Buttons (No Black Background) -->
+    <div class="header">
+        <a href="page1.html" class="back-button">&#8592; Back</a>
+        <a href="cart.html" class="cart-icon">🛒 Cart <span id="cart-count">0</span></a>
+    </div>
+
+    <!-- Banner Image -->
+    <div class="banner">
+        <img src= "https://www.sugarcosmetics.com/cdn/shop/collections/Welcome-offer-10--Off-LP1600x400_1.jpg?v=1733728614&width=1600" alt="Gifting Sets $ Combo">
+    </div>
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <h1 style="text-align: center; margin: 20px 0; font-weight: 700; font-size: 45px; letter-spacing: 2px; text-transform: uppercase; font-family: 'Cinzel', serif;">Gifting Set's And Combo's</h1>
+    
+        <section class="products">
+            
+            <div class="product">
+                <img src="https://www.sugarcosmetics.com/cdn/shop/files/Kritis-Beauty-Favourites-5.png?v=1741518731&width=500" alt="Kriti's Beauty Favourites">
+                <h2>Kriti's Beauty Favourites</h2>
+                <p class="price">₹999</p>
+                <div class="buttons">
+                    <button onclick="addToCart('Kritis Beauty Favourites', '₹999', 'https://www.sugarcosmetics.com/cdn/shop/files/Kritis-Beauty-Favourites-5.png?v=1741518731&width=500')">Add to Cart</button>
+                    <button onclick="buyNow('Kritis Beauty Favourites', '₹999', 'https://www.sugarcosmetics.com/cdn/shop/files/Kritis-Beauty-Favourites-5.png?v=1741518731&width=500')">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://www.sugarcosmetics.com/cdn/shop/files/Vineetas-Favourite-Makeup-Kit_6e849469.jpg?v=1740047992&width=500" alt="Vineeta's Favourite Makeup Kit">
+                <h2>Vineeta's Favourite Makeup Kit</h2>
+                <p class="price">₹2999</p>
+                <div class="buttons">
+                    <button onclick="addToCart('Vineetas Favourite Makeup Kit', '₹2999', 'https://www.sugarcosmetics.com/cdn/shop/files/Vineetas-Favourite-Makeup-Kit_6e849469.jpg?v=1740047992&width=500')">Add to Cart</button>
+                    <button onclick="buyNow('Vineetas Favourite Makeup Kit', '₹2999', 'https://www.sugarcosmetics.com/cdn/shop/files/Vineetas-Favourite-Makeup-Kit_6e849469.jpg?v=1740047992&width=500')">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://www.sugarcosmetics.com/cdn/shop/files/Bridal-Makeup-Kit.jpg?v=1736171329&width=500" alt="Bridal Makeup Kit">
+                <h2>Bridal Makeup Kit</h2>
+                <p class="price">₹1799</p>
+                <div class="buttons">
+                    <button onclick="addToCart('Bridal Makeup Kit', '₹1799', 'https://www.sugarcosmetics.com/cdn/shop/files/Bridal-Makeup-Kit.jpg?v=1736171329&width=500')">Add to Cart</button>
+                    <button onclick="buyNow('Bridal Makeup Kit', '₹1799', 'https://www.sugarcosmetics.com/cdn/shop/files/Bridal-Makeup-Kit.jpg?v=1736171329&width=500')">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://www.sugarcosmetics.com/cdn/shop/files/Born-to-Lead-Makeup-Kit-3.jpg?v=1740568388&width=1000" alt="Born to Lead Makeup Kit">
+                <h2>Born to Lead Makeup Kit</h2>
+                <p class="price">₹2045</p>
+                <div class="buttons">
+                    <button onclick="addToCart('Born to Lead Makeup Kit', '₹2045', 'https://www.sugarcosmetics.com/cdn/shop/files/Born-to-Lead-Makeup-Kit-3.jpg?v=1740568388&width=1000')">Add to Cart</button>
+                    <button onclick="buyNow()">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://www.sugarcosmetics.com/cdn/shop/files/Spotlight-On-You-Makeup-Kit_93e59c25.jpg?v=1740048997&width=1000" alt="Spotlight On You Makeup Kit">
+                <h2>Spotlight On You Makeup Kit</h2>
+                <p class="price">₹999</p>
+                <div class="buttons">
+                    <button onclick="addToCart('Spotlight On You Makeup Kit', '₹999', 'https://www.sugarcosmetics.com/cdn/shop/files/Spotlight-On-You-Makeup-Kit_93e59c25.jpg?v=1740048997&width=1000')">Add to Cart</button>
+                    <button onclick="buyNow('Spotlight On You Makeup Kit', '₹999', 'https://www.sugarcosmetics.com/cdn/shop/files/Spotlight-On-You-Makeup-Kit_93e59c25.jpg?v=1740048997&width=1000')">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://www.sugarcosmetics.com/cdn/shop/files/Crimson-Kisses-Lip-Set.jpg?v=1736172096&width=500" alt="Crimson Kisses Lip Set">
+                <h2>Crimson Kisses Lip Set</h2>
+                <p class="price">₹1197</p>
+                <div class="buttons">
+                    <button onclick="addToCart('Crimson Kisses Lip Set','₹1197','https://www.sugarcosmetics.com/cdn/shop/files/Crimson-Kisses-Lip-Set.jpg?v=1736172096&width=500')">Add to Cart</button>
+                    <button onclick="buyNow('Crimson Kisses Lip Set','₹1197','https://www.sugarcosmetics.com/cdn/shop/files/Crimson-Kisses-Lip-Set.jpg?v=1736172096&width=500')">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://www.sugarcosmetics.com/cdn/shop/files/No-Makeup-Makeup-Kit.jpg?v=1736172166&width=500" alt="No-Makeup Makeup Kit">
+                <h2>No-Makeup Makeup Kit</h2>
+                <p class="price">₹2022</p>
+                <div class="buttons">
+                    <button onclick="addToCart('No-Makeup Makeup Kit', '₹2022', 'https://www.sugarcosmetics.com/cdn/shop/files/No-Makeup-Makeup-Kit.jpg?v=1736172166&width=500')">Add to Cart</button>
+                    <button onclick="buyNow('No-Makeup Makeup Kit', '₹2022', 'https://www.sugarcosmetics.com/cdn/shop/files/No-Makeup-Makeup-Kit.jpg?v=1736172166&width=500')">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://www.sugarcosmetics.com/cdn/shop/files/Prime-Pout-Minimal-Set.jpg?v=1736172039&width=500" alt="Prime & Pout Minimal Set">
+                <h2>Prime & Pout Minimal Set</h2>
+                <p class="price">₹1823</p>
+                <div class="buttons">
+                    <button onclick="addToCart('Prime & Pout Minimal Set', '₹1823', 'https://www.sugarcosmetics.com/cdn/shop/files/Prime-Pout-Minimal-Set.jpg?v=1736172039&width=500')">Add to Cart</button>
+                    <button onclick="buyNow('Prime & Pout Minimal Set', '₹1823', 'https://www.sugarcosmetics.com/cdn/shop/files/Prime-Pout-Minimal-Set.jpg?v=1736172039&width=500')">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://www.sugarcosmetics.com/cdn/shop/files/Rosy-Rouge-Makeup-Set.jpg?v=1736172047&width=500" alt="Rosy Rouge Makeup Set">
+                <h2>Rosy Rouge Makeup Set</h2>
+                <p class="price">₹1124</p>
+                <div class="buttons">
+                    <button onclick="addToCart('Rosy Rouge Makeup Set', '₹1124', 'https://www.sugarcosmetics.com/cdn/shop/files/Rosy-Rouge-Makeup-Set.jpg?v=1736172047&width=500')">Add to Cart</button>
+                    <button onclick="buyNow('Rosy Rouge Makeup Set', '₹1124', 'https://www.sugarcosmetics.com/cdn/shop/files/Rosy-Rouge-Makeup-Set.jpg?v=1736172047&width=500')">Buy Now</button>
+                </div>
+            </div>
+            
+            
+           
+    </section>
+
+    <script>
+        function addToCart(name, price, img) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let existingItem = cart.find(item => item.name === name);
+    
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({ name, price, img, quantity: 1 });
+            }
+    
+            localStorage.setItem("cart", JSON.stringify(cart));
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            document.getElementById("cart-count").textContent = cart.reduce((total, item) => total + item.quantity, 0);
+        }
+    
+        document.addEventListener("DOMContentLoaded", updateCartCount);
+    </script>
+    
+
+    <script>
+        function buyNow(name, price, img) {
+    let cart = [{ name, price, img, quantity: 1 }];
+    localStorage.setItem("cart", JSON.stringify(cart));
+    window.location.href = "checkout.html";
+}
+
+    </script>
+
+</body>
+    </html>

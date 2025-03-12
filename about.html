@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Sugar Cosmetics</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* White background for a clean look */
+            color: #333;
+        }
+
+        /* Hero Section with Background */
+        .hero {
+            background: url("https://i.pinimg.com/736x/5e/dc/f5/5edcf59a6a35428507cf0d8fd2d4b166.jpg") no-repeat center;
+            background-size: cover;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            position: relative;
+        }
+
+        /* Stylish Back Button */
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(135deg, #0c0b0b, #0d0d0d);
+            border: none;
+            color: white;
+            font-size: 24px;
+            padding: 12px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: linear-gradient(135deg, #ff4b2b, #ff416c);
+            transform: scale(1.1);
+        }
+
+        /* About Section */
+        .about {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 38px;
+            color: #2a0107;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 30px;
+            color: #000;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin: 8px 0;
+            padding: 12px;
+            background: #fff3f8;
+            border-radius: 8px;
+            display: inline-block;
+            width: 80%;
+            font-weight: bold;
+            color: #444;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Highlighted tagline */
+        .tagline {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3a0303;
+            margin-top: 20px;
+            background: linear-gradient(90deg, #581d40, #882b50);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <button class="back-button" onclick="history.back()">←</button>
+        Discover the beauty of SUGAR – Unstoppable, Bold, and Beautiful!
+    </div>
+
+    <!-- About Section -->
+    <section class="about">
+        <h1>About Sugar Cosmetics</h1>
+        <p>SUGAR Cosmetics is one of India’s fastest-growing beauty brands, known for its bold, high-performance makeup and skincare products. 
+        Launched in 2015, SUGAR has captured the hearts of millennials and Gen Z with its cruelty-free, long-lasting, and trendy cosmetics.</p>
+
+        <p>With a mission to redefine beauty standards, SUGAR offers a wide range of products, from lipsticks, foundations, eyeliners, and mascaras 
+        to an extensive skincare collection designed for all skin types. The brand is recognized for its innovative formulas, vibrant shades, and 
+        stylish packaging, catering to modern, independent, and confident individuals.</p>
+
+        <h2>Why Choose SUGAR?</h2>
+        <ul>
+            <li>✔ <b>Cruelty-Free & Vegan-Friendly</b> – No animal testing</li>
+            <li>✔ <b>High-Performance & Long-Lasting</b> – Makeup that stays all day</li>
+            <li>✔ <b>Designed for Indian Skin Tones</b> – Inclusive shades for every complexion</li>
+            <li>✔ <b>Trendy & Innovative</b> – Always ahead with the latest beauty trends</li>
+        </ul>
+
+        <p>SUGAR Cosmetics is available online and in stores across India, ensuring that high-quality makeup and skincare are accessible to everyone.</p>
+
+        <p class="tagline">✨ Bold beauty. Fearless you. #RuleTheWorldWithSUGAR ✨</p>
+    </section>
+
+</body>
+</html>
